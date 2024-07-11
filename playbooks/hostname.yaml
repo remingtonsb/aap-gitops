@@ -3,8 +3,11 @@
   hosts: all
   tasks:
     - name: Execute hostname command
-      command: hostname;sleep10
+      command: hostname
       register: hostname_output
+
+    - name: Execute sleep
+      command: sleep 10
 
     - name: Print hostname
       debug:
