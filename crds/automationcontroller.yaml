@@ -25,7 +25,7 @@ spec:
   metrics_utility_pvc_claim_size: 5Gi
   set_self_labels: true
   projects_persistence: false
-  replicas: 1
+  replicas: 3
   admin_user: admin
   loadbalancer_protocol: http
   metrics_utility_cronjob_gather_schedule: '@hourly'
