@@ -2,7 +2,7 @@
 - name: Print HOSTNAME variable
   hosts: all
   vars:
-    HOSTNAME: "example-hostname"
+    HOSTNAME: ${HOSTNAME} 
   tasks:
     - name: Print the HOSTNAME variable
       debug:
