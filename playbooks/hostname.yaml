@@ -7,7 +7,7 @@
       register: hostname_output
 
     - name: Execute sleep
-      command: sleep 10
+      command: sleep 30
 
     - name: Print hostname
       debug:
