@@ -4,5 +4,4 @@ metadata:
   name: configmap
 data:
   AMBIENTE: DEV
-  DOMINIO: santander.com.bc
   
