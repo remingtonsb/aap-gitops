@@ -1,91 +1,13 @@
 apiVersion: automationcontroller.ansible.com/v1beta1
 kind: AutomationController
 metadata:
-  creationTimestamp: '2024-07-10T18:40:57Z'
-  generation: 1
   labels:
     app.kubernetes.io/component: automationcontroller
     app.kubernetes.io/managed-by: automationcontroller-operator
     app.kubernetes.io/operator-version: ''
     app.kubernetes.io/part-of: santander
-  managedFields:
-    - apiVersion: automationcontroller.ansible.com/v1beta1
-      fieldsType: FieldsV1
-      fieldsV1:
-        'f:spec':
-          'f:ipv6_disabled': {}
-          'f:auto_upgrade': {}
-          'f:set_self_labels': {}
-          'f:postgres_keepalives_interval': {}
-          'f:loadbalancer_protocol': {}
-          'f:metrics_utility_cronjob_gather_schedule': {}
-          'f:metrics_utility_pvc_claim_size': {}
-          'f:projects_storage_access_mode': {}
-          'f:postgres_keepalives_count': {}
-          .: {}
-          'f:projects_persistence': {}
-          'f:create_preload_data': {}
-          'f:admin_user': {}
-          'f:metrics_utility_cronjob_report_schedule': {}
-          'f:replicas': {}
-          'f:loadbalancer_port': {}
-          'f:route_tls_termination_mechanism': {}
-          'f:garbage_collect_secrets': {}
-          'f:image_pull_policy': {}
-          'f:loadbalancer_ip': {}
-          'f:postgres_keepalives_idle': {}
-          'f:projects_storage_size': {}
-          'f:ingress_type': {}
-          'f:task_privileged': {}
-          'f:no_log': {}
-          'f:postgres_keepalives': {}
-          'f:metrics_utility_enabled': {}
-      manager: Mozilla
-      operation: Update
-      time: '2024-07-10T18:40:57Z'
-    - apiVersion: automationcontroller.ansible.com/v1beta1
-      fieldsType: FieldsV1
-      fieldsV1:
-        'f:metadata':
-          'f:labels':
-            .: {}
-            'f:app.kubernetes.io/component': {}
-            'f:app.kubernetes.io/managed-by': {}
-            'f:app.kubernetes.io/operator-version': {}
-            'f:app.kubernetes.io/part-of': {}
-      manager: OpenAPI-Generator
-      operation: Update
-      time: '2024-07-10T18:41:09Z'
-    - apiVersion: automationcontroller.ansible.com/v1beta1
-      fieldsType: FieldsV1
-      fieldsV1:
-        'f:status':
-          'f:URL': {}
-          'f:adminPasswordSecret': {}
-          'f:adminUser': {}
-          'f:broadcastWebsocketSecret': {}
-          'f:image': {}
-          'f:postgresConfigurationSecret': {}
-          'f:secretKeySecret': {}
-          'f:version': {}
-      manager: OpenAPI-Generator
-      operation: Update
-      subresource: status
-      time: '2024-07-10T18:46:56Z'
-    - apiVersion: automationcontroller.ansible.com/v1beta1
-      fieldsType: FieldsV1
-      fieldsV1:
-        'f:status':
-          .: {}
-          'f:conditions': {}
-      manager: ansible-operator
-      operation: Update
-      subresource: status
-      time: '2024-07-11T04:48:02Z'
   name: santander
   namespace: aap
-  resourceVersion: '658226'
-  uid: 8911884e-44f3-472f-8063-fac2d148e8d0
 spec:
   postgres_keepalives_count: 5
   postgres_keepalives_idle: 5
@@ -113,25 +35,3 @@ spec:
   admin_user: admin
   loadbalancer_protocol: http
   metrics_utility_cronjob_gather_schedule: '@hourly'
-status:
-  postgresConfigurationSecret: santander-postgres-configuration
-  URL: 'https://santander-aap.apps.rosa-c2xjv.kbj9.p1.openshiftapps.com'
-  broadcastWebsocketSecret: santander-broadcast-websocket
-  version: 4.5.7
-  conditions:
-    - lastTransitionTime: '2024-07-10T18:47:00Z'
-      reason: ''
-      status: 'False'
-      type: Failure
-    - lastTransitionTime: '2024-07-10T18:40:57Z'
-      reason: Successful
-      status: 'True'
-      type: Running
-    - lastTransitionTime: '2024-07-11T04:48:02Z'
-      reason: Successful
-      status: 'True'
-      type: Successful
-  adminPasswordSecret: santander-admin-password
-  adminUser: admin
-  image: 'registry.redhat.io/ansible-automation-platform-24/controller-rhel8@sha256:09344081c5683ba9fc644df620af72e71f3fc23c566f79b6ad98b5a759b822ee'
-  secretKeySecret: santander-secret-key
