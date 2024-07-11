@@ -1,6 +1,8 @@
 apiVersion: v1
 kind: ConfigMap
+metadata:
   name: configmap
 data:
-  DOMINIO: santander.com.br
+  AMBIENTE: DEV
+  DOMINIO: santander.com.bc
   
