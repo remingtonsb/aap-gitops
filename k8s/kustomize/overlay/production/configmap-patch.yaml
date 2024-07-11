@@ -1,0 +1,3 @@
+- op: replace #action
+  path: /spec/data/AMBIENTE #resouirce we want to change
+  value: PRD #value we want to use for patching 

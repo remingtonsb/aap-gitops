@@ -3,3 +3,5 @@ kind: Kustomization
 namespace: containergroup-namespace
 resources:
 - ../../base
+patches:
+   path: ingress-patch.yaml
