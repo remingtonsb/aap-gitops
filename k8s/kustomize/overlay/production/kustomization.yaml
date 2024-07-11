@@ -4,4 +4,5 @@ namespace: containergroup-namespace
 resources:
 - ../../base
 patches:
+ - target:
    path: configmap-patch.yaml
