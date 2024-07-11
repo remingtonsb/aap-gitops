@@ -1,1 +1,8 @@
 
+#Create Service Account
+
+oc create sa appcrd
+
+#Definir permissão admin para o usuário no projeto aap
+
+oc adm policy add-role-to-user admin -z appcrd
