@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: configmap
 data:
-  AMBIENTE: DEV
+  AMBIENTE: PRD
